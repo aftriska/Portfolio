@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+    <title>Star Wars Directory with SWAPI</title>
+    <!-- build:css assets/styles/styles.css -->
+    <link rel="stylesheet" href="temp/styles/styles.css">
+    <!-- endbuild -->
+    <script>
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="large-hero">
+      <div class="row">
+        <div class="row__large-4">
+          <img src="assets/images/profile.jpg" alt="Aftri Marriska">
+        </div>
+        <div class="row__large-8">
+          <img src="assets/images/under_const.svg" alt="Aftri Marriska">
+        </div>
+      </div>
+    </div>
+  <!-- build:js assets/scripts/App.js -->
+  <script src="/temp/scripts/App.js"></script>
+  <!-- endbuild -->
+  </body>
+</html>
